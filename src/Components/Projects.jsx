@@ -3,6 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa';
 import { SiMysql } from 'react-icons/si';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import './Projects.css';
 
 const projects = [
   {

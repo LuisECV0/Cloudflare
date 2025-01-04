@@ -1,0 +1,109 @@
+.about-me {
+    padding: 60px 0;
+    background-color: #cecece;
+    height: 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-me img {
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.icon-dw a {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgb(35, 35, 35);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;
+    transition: color 0.4s ease-in-out;
+}
+
+.icon-dw a::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out; 
+    z-index: -1; 
+}
+
+.icon-dw a:hover::before {
+    transform: translate(-50%, -50%) scale(1); 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon-dw a:hover {
+    color: #ffffff;
+}
+
+.icon-dw a:active {
+    transform: scale(0.95);
+}
+
+
+  
+button {
+    background-color: #121212;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 13px 23px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+button:hover {
+    background-color: #333333;
+}
+  
+button:active {
+    transform: scale(0.98);
+}
+  
+  
+
+@media (max-width: 767px) {
+    .about-me img {
+        width: 40%; 
+        height: auto;
+        display: block;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}

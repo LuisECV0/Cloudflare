@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaJsSquare, FaPython, FaPhp, FaBootstrap, FaSass, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaHtml5 } from 'react-icons/fa';
 import { SiCplusplus, SiMysql } from 'react-icons/si';
+import './Skills.css';
 
 const Skills = () => {
   const skills = [

@@ -61,19 +61,7 @@ const projects = [
     imgUrl: 'https://i.ibb.co/pRCXygX/cal-sass-min.png',
     gitUrl: 'https://github.com/LuisECV0/calculadoraSAS',
   },
-/** NO ESTA TERMINADO
-  {
-    title: 'Project - Facebook',
-    description:
-    [
-      <FaHtml5 color="#E34F26" />, 
-      <FaCss3Alt color="#1572B6" />, 
-      <FaJs color="#F7DF1E" />
-    ],
-    imgUrl: 'https://i.ibb.co/HVyGrBS/clon-FB-min.png',
-    gitUrl: 'https://github.com/sLuisECV0/clonFB',
-  }
-  */
+
   {
     title: 'Landing Page RE:ZERO',
     description: 

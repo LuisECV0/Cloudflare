@@ -18,8 +18,8 @@
   }
   
   .icon-container {
-    font-size: 4rem; /* Tamaño de los íconos */
-    color: rgb(35, 35, 35); /* Color base para los íconos */
+    font-size: 4rem;
+    color: rgb(35, 35, 35);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
@@ -32,7 +32,7 @@
   
   .icon-container:hover {
     transform: scale(1.2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
   .icon-container:before {

@@ -108,7 +108,7 @@ const Projects = () => {
           <Col>
             <h2 className="section-title">Projects</h2>
             <p className="section-subtitle">
-              Algunos de mis proyectos mas recientes
+              Algunos de mis proyectos más recientes
             </p>
           </Col>
         </Row>
@@ -122,16 +122,16 @@ const Projects = () => {
                     <a href={project.gitUrl} target="_blank" rel="noopener noreferrer">
                       <FaGithub className="project-icon github-icon" />
                     </a>
-                    {/** 
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <FaExternalLinkAlt className="project-icon link-icon" />
-                    </a>
-                    */}
                   </div>
                 </div>
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
+                  {/* Renderiza los iconos con key única */}
+                  <Card.Text>
+                    {project.description.map((icon, iconIndex) => (
+                      <span key={iconIndex}>{icon}</span> // Agregando key al icono
+                    ))}
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -141,5 +141,6 @@ const Projects = () => {
     </section>
   );
 };
+
 
 export default Projects;

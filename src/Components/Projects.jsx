@@ -10,12 +10,13 @@ const projects = [
     title: 'Hacienda Montalván',
     description: 
     [
-    <FaHtml5 color="#E34F26" />, 
+    <FaReact color="#1572B6" />,
     <FaCss3Alt color="#1572B6" />, 
     <FaJs color="#F7DF1E" />
     ],
     imgUrl: 'https://i.ibb.co/Z23D6PC/landing-hacienda-min.png',
-    gitUrl: 'https://github.com/LuisECV0/landing-hacienda-montalban',  
+    gitUrl: 'https://github.com/LuisECV0/landing-hacienda-montalban',
+    projectUrl: 'https://hacienda-montalban.pages.dev/', 
   },
   {
     title: 'Project - Netflix',
@@ -115,25 +116,27 @@ const Projects = () => {
         <Row>
           {projects.map((project, index) => (
             <Col key={index} md={4} className="project-col">
-              <Card className="project-card">
-                <div className="project-image-wrapper">
-                  <Card.Img variant="top" src={project.imgUrl} alt={project.title} />
-                  <div className="icon-overlay">
-                    <a href={project.gitUrl} target="_blank" rel="noopener noreferrer">
-                      <FaGithub className="project-icon github-icon" />
-                    </a>
+              <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
+                <Card className="project-card">
+                  <div className="project-image-wrapper">
+                    <Card.Img variant="top" src={project.imgUrl} alt={project.title} />
+                    <div className="icon-overlay">
+                      <a href={project.gitUrl} target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="project-icon github-icon" />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  {/* Renderiza los iconos con key única */}
-                  <Card.Text>
-                    {project.description.map((icon, iconIndex) => (
-                      <span key={iconIndex}>{icon}</span> // Agregando key al icono
-                    ))}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+                  <Card.Body>
+                    <Card.Title>{project.title}</Card.Title>
+                    {/* Renderiza los iconos con key única */}
+                    <Card.Text>
+                      {project.description.map((icon, iconIndex) => (
+                        <span key={iconIndex}>{icon}</span> // Agregando key al icono
+                      ))}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </a>
             </Col>
           ))}
         </Row>
